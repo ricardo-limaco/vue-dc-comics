@@ -1,6 +1,6 @@
 <template>
   <footer>
-    Componente Footer
+    
   </footer>
 </template>
 

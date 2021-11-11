@@ -1,6 +1,8 @@
 <template>
   <main>
-    Componente main
+    <div class="container">
+      <h3>--> Contenet goes here</h3>
+    </div>
   </main>
 </template>
 
