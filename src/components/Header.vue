@@ -1,13 +1,15 @@
 <template>
   <header>
     <div class="container">
-      
+
       <div class="page-header">
-        <img src="../assets/dc-logo.png" alt="dc-logo" class="logo">
+        <a href="#">
+          <img src="../assets/dc-logo.png" alt="dc-logo" class="logo">
+        </a>
         
         <ul class="navbar">
           <li class="navbar-item" v-for="(item, i) in navbarItems" v-bind:key="i">
-            <a v-bind:href="item.href">{{ item.title }}</a>
+            <a href="#">{{ item.title }}</a>
             
           </li>
         </ul>
