@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss">
 @import "style/variables";
+@import "style/generics";
 @import "style/header";
 @import "style/main";
 @import "style/footer";
