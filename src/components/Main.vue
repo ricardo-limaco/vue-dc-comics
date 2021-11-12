@@ -1,7 +1,13 @@
 <template>
   <main>
-    <div class="container">
-      <h2>--> Content goes here</h2>
+    <div class="jumbotron">
+      <div class="container">
+        <a href="#">CURRENT SERIES</a>
+      </div>
+    </div>
+
+    <div class="nero">
+
     </div>
   </main>
 </template>

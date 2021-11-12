@@ -3,9 +3,27 @@
 main {
   background-color: #1c1c1c;
   
-  h2 {
-    color: white;
-    padding: 50px 0;
+  .jumbotron {
+    background-image: url("./assets/jumbotron.jpg");
+    background-size: cover;
+    background-position-x: center;
+    height: 400px;
+    position: relative;
+
+    a {
+      position: absolute;
+      bottom: -26px;
+      color: white;
+      font-weight: 700;
+      font-size: 22px;
+      padding: 13px 23px;
+      background-color: $color-primary;
+    }
+  }
+
+  .nero {
+    height: 200px;
+    background-color: black;
   }
 }
 

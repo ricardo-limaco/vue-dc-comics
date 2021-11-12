@@ -26,8 +26,8 @@
         border-top: 7px solid transparent;
         
         &:hover {
-          color: #0282f9;
-          border-bottom: 7px solid #0282f9;
+          color: $color-primary;
+          border-bottom: 7px solid $color-primary;
         }
       }
     } 

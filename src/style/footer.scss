@@ -2,7 +2,7 @@
 
 // Footer Top
 .page-footer-top {
-  background-color: #0282f9;
+  background-color: $color-primary;
 
   .row {
     display: flex;
@@ -19,7 +19,6 @@
         max-height: 55px;
         max-width: 55px;
         display: inline-block;
-        vertical-align: middle;
       }
       h3 {
         font-size: 13px;
@@ -39,7 +38,6 @@
 
 //Footer Center
 .page-footer-center {
-  background-color: black;
   color: white;
   background-image: url("./assets/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -100,11 +98,11 @@
       text-transform: uppercase;
       color: white;
       padding: 12px;
-      border: 2px solid #0282f9;
+      border: 2px solid $color-primary;
       transition: 0.8s;
 
       &:hover {
-        background-color: #0282f9;
+        background-color: $color-primary;
       }
     };
 
@@ -115,7 +113,7 @@
       h3 {
         font-size: 16px;
         font-weight: 700;
-        color: #0282f9;
+        color: $color-primary;
         display: inline-block;
         padding-right: 10px;
         vertical-align: super;

@@ -69,11 +69,9 @@
           <div class="follow">
             <h3>FOLLOW US</h3>
             <ul>
-              <li><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
-              <li><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
-              <li><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
-              <li><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
-              <li><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+              <li v-for="(image, i) in footerFollow" v-bind:key="i">
+                <a href="#"><img v-bind:src="image.img" alt=""></a>
+              </li>
             </ul>
           </div>
 
@@ -147,7 +145,14 @@ export default {
       footerShop: [
         {title: "SHOP DC"},
         {title: "SHOP DC Collectibles"},
-      ]
+      ],
+      footerFollow: [
+        {img: require("../assets/footer-facebook.png")},
+        {img: require("../assets/footer-twitter.png")},
+        {img: require("../assets/footer-youtube.png")},
+        {img: require("../assets/footer-pinterest.png")},
+        {img: require("../assets/footer-periscope.png")},
+      ],
     }
   }
 };
