@@ -10,7 +10,7 @@ main {
     height: 400px;
     position: relative;
 
-    a {
+    .btn-large {
       position: absolute;
       bottom: -26px;
       color: white;
@@ -28,17 +28,35 @@ main {
     .product-card-container {
       display: flex;
       flex-wrap: wrap;
-      padding: 40px 0;
+      justify-content: space-between;
+      padding: 50px 15px 0;
+
+      .product-card {
+        flex-basis: calc(100% / 6 - 20px) ;
+
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          font-size: 15px;
+          padding-top: 13px;
+          padding-bottom: 45px;
+          color: white;
+        }
+      }
     }
 
-    a {
+    .btn-small {
       text-align: center;
-      color: white;
-      font-weight: 700;
-      font-size: 12px;
-      padding: 10px 40px;
-      background-color: $color-primary;
-      
+      a {
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 10px 45px;
+        background-color: $color-primary;
+        
+      }
     }
   }
 }

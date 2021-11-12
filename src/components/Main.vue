@@ -2,17 +2,21 @@
   <main>
     <section class="jumbotron">
       <div class="container">
-        <a href="#">CURRENT SERIES</a>
+        <a href="#" class="btn-large">CURRENT SERIES</a>
       </div>
     </section>
 
     <section class="container">
       <div class="product-card-container">
-        <ProductCard/>
-        SPAZIO CARD
+        <ProductCard
+        v-for="(product, i) in dcList" :key="i" :img="product.thumb" :title="product.series">
+        </ProductCard>
+        
       </div>
 
-      <a href="#">LOAD MORE</a>
+      <div class="btn-small">
+        <a href="#">LOAD MORE</a>
+      </div>
     </section>
     
   </main>
