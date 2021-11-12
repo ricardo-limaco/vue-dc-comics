@@ -1,20 +1,37 @@
 <template>
   <main>
-    <div class="jumbotron">
+    <section class="jumbotron">
       <div class="container">
         <a href="#">CURRENT SERIES</a>
       </div>
-    </div>
+    </section>
 
-    <div class="nero">
+    <section class="container">
+      <div class="product-card-container">
+        <ProductCard/>
+        SPAZIO CARD
+      </div>
 
-    </div>
+      <a href="#">LOAD MORE</a>
+    </section>
+    
   </main>
 </template>
 
 <script>
+import ProductCard from "./ProductCard.vue";
+import jsonData from "../database/dc-comics.json";
+
 export default {
-  name: "Main"
+  name: "Main",
+  components: {
+    ProductCard,
+  },
+  data() {
+    return {
+      dcList: jsonData,
+    }
+  }
 };
 </script>
 
